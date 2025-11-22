@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="futzin.css"> 
+    <title>Enciclopédia do Futebol</title> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- NOVO MENU DE NAVEGAÇÃO -->
+            <div class="menu-container">
+                <button id="menu-button" class="menu-button">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </button>
+                <div id="dropdown-menu" class="dropdown-menu">
+                    <a href="index.html">Home</a>
+                    <a href="noticias.html">Notícias</a>
+                    <a href="https://www.linkedin.com/posts/gustavo-alves-menezes-57654539a_desenvolvimentoweb-frontend-html-share-7398051888887148545-AhMV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGH3xOoBxPSnL5iZPI5cLV4SpaEX6YR8eqw" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+            </div>
+            <!-- FIM DO NOVO MENU -->
+
+            <h1>Enciclopédia do Futebol</h1> 
+            <div class="search-container">
+                <!-- O input de busca foi movido para o CSS para melhor alinhamento -->
+                <input type="search" id="search-input" placeholder="Buscar time ou lenda...">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" id="teams-container">
+            <!-- Os cards dos times serão inseridos aqui pelo JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Enciclopédia do Futebol. Criado por guts_mz.</p>
+            <ul class="footer-links">
+            </ul>
+        </div>
+    </footer>
+
+    <!-- ESTRUTURA DO MODAL DE DETALHES -->
+    <div id="details-modal" class="modal-overlay">
+        <div class="modal-content">
+            <span id="close-modal-button" class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p><strong>Ano de Fundação:</strong> <span id="modal-year"></span></p>
+            <p><strong>País:</strong> <span id="modal-country"></span></p>
+            <hr style="margin: 15px 0; border-color: var(--card-border-color);">
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
